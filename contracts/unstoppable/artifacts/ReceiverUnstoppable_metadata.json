@@ -1,0 +1,115 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "poolAddress",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "executeFlashLoan",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "tokenAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "receiveTokens",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/unstoppable/ReceiverUnstoppable.sol": "ReceiverUnstoppable"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/math/SafeMath.sol": {
+			"keccak256": "0x04d34b3cd5677bea25f8dfceb6dec0eaa071d4d4b789a43f13fe0c415ba4c296",
+			"urls": [
+				"bzz-raw://e7e8b526a6839e5ba14f0d23a830387fec47f7043ce01d42c9f285b709a9d080",
+				"dweb:/ipfs/QmXmhhFmX5gcAvVzNiDPAGA35iHMPNaYtQkACswRHBVTNw"
+			]
+		},
+		"@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+			"keccak256": "0x6cc1cb934a3ac2137a7dcaed018af9e235392236ceecfd3687259702b9c767ad",
+			"urls": [
+				"bzz-raw://0055fa88138cd1c3c6440370f8580f85857f8fe9dec41c99af9eafbeb8d9c3ce",
+				"dweb:/ipfs/QmX1xDh8vwGLLCH8ti45eXjQ7Wcxv1FEGTR3jkFnd5Nv6F"
+			]
+		},
+		"@openzeppelin/contracts/utils/ReentrancyGuard.sol": {
+			"keccak256": "0x5cc574fb09fe4a5f96228ee3af85d268aae6e0b91fc0f2f90b08e9b207bfefd5",
+			"urls": [
+				"bzz-raw://9e043d364d848bedcafab010a00bb8069b4719a447cd5cf41be4f2993d8e9fc5",
+				"dweb:/ipfs/QmPdecjvQJvjxcEH8jd2vuKxKhBWbUu9qLft4kfKz96eR3"
+			]
+		},
+		"contracts/unstoppable/ReceiverUnstoppable.sol": {
+			"keccak256": "0x861b8c349beb1a1ef205c3fd9751a57976c3fc562dc709aa71824a7e9d56dfea",
+			"urls": [
+				"bzz-raw://cc9b2d1633cf828fda6178de73bc5a1ab9e8817e1e1f24d6b874a696e923c2cc",
+				"dweb:/ipfs/QmNj3Py4cMQPN3wSC3cj39GwwkjXQj11hZoMudqfP99UEn"
+			]
+		},
+		"contracts/unstoppable/UnstoppableLender.sol": {
+			"keccak256": "0x473808e310dd02b4bd891996d429ef52e2b1a1869333a4e2d74660917c3a16c1",
+			"urls": [
+				"bzz-raw://a6246cfe61d727533243da2424c57c82eaf46c02a7090e115aba4759fe6bdc66",
+				"dweb:/ipfs/QmZm83xRpQMc7PzHny3tqSHEqqXCZ5NG3wDku4E5KsYzCg"
+			]
+		}
+	},
+	"version": 1
+}

